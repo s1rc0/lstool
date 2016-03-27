@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Add new user</h1>
+<hr>
+<div id="content">
+    <form action="/perform" method="post" name="useradd">
+        Host: {{form.host}} <br>
+        Username: {{form.name}}<br>
+        Password: {{form.passwd}}<br>
+        Email: {{form.email}}<br>
+        First Name: {{form.firstname}}<br>
+        Middle Name: {{form.middlename}}<br>
+        Last Name: {{form.lastname}}<br>
+        Send notification email: {{form.notify}}<br>
+        Port: {{form.port}}<br>
+        Roles: {{form.roles}}<br>
+        Org Roles: {{form.orgroles}}<br>
+        Site Roles: {{form.siteroles}}<br>
+        Orgs: {{form.orgs}}<br>
+        Locale: {{form.locale}}<br>
+        <p><input type="submit" value="Create User"></p>
+    </form>
+</div>
+{% endblock %}

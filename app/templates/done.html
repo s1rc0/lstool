@@ -1,0 +1,12 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<h1 xmlns="http://www.w3.org/1999/html">Done</h1>
+    <div id="content">
+        U have created user with name <strong>{{name}}</strong>,
+        and password <strong>{{passwd}}</strong> on : <strong>{{host}}</strong>
+    </div>
+<hr>
+{{out}}
+{% endblock %}
